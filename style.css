@@ -98,7 +98,7 @@ nav {
 .tab.active, .tab:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
 
 /* ── DEALS ── */
-.deals-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.deals-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
 .deal-card { border-radius: var(--radius); overflow: hidden; position: relative; cursor: pointer; }
 .deal-card img { width: 100%; height: 180px; object-fit: cover; display: block; transition: transform 0.3s; }
 .deal-card:hover img { transform: scale(1.04); }
@@ -113,13 +113,6 @@ nav {
 }
 .deal-info small { display: block; font-weight: 400; font-size: 11px; opacity: 0.8; }
 
-/* Placeholder card for missing deal3.png */
-.deal-card--placeholder { background: #2a2a2a; min-height: 180px; }
-.deal-placeholder-inner {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  height: 180px; color: rgba(255,255,255,0.4); font-size: 13px; gap: 8px;
-}
-.deal-placeholder-inner span { font-size: 36px; }
 
 /* ── CATEGORIES ── */
 .cat-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 14px; }
