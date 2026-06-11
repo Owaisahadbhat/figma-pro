@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
- 
-  <title>Tech Test OWAIS AHAD BHAT – Feast Your Senses, Fast and Fresh</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order.uk – Feast Your Senses, Fast and Fresh</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,19 +18,17 @@
   </div>
 </div>
 
-
 <nav>
   <div class="logo">Order<span class="logo-dot">🧡</span></div>
   <ul class="nav-links">
     <li><a href="#" class="nav-home">Home</a></li>
-    <li><a href="#">Browse Menu</a></li>
-    <li><a href="#">Special Offers</a></li>
-    <li><a href="#">Restaurants</a></li>
-    <li><a href="#">Track Order</a></li>
+    <li><a href="#deals">Browse Menu</a></li>
+    <li><a href="#deals">Special Offers</a></li>
+    <li><a href="#restaurants">Restaurants</a></li>
+    <li><a href="#footer">Track Order</a></li>
   </ul>
   <button class="login-btn">👤 Login / Signup</button>
 </nav>
-
 
 <section class="hero">
   <div class="hero-content">
@@ -37,12 +36,11 @@
     <p>Order Restaurant food, takeaway and groceries.</p>
     <div class="hero-search">
       <input type="text" placeholder="Enter a postcode to see what we deliver"/>
-      <button>Search</button>
+      <button type="button">Search</button>
     </div>
   </div>
   <div class="hero-img">
     <img src="hero-girl.png" alt="Hero Girl"/>
-    
   </div>
   <div class="hero-notifs">
     <div class="notif">
@@ -60,120 +58,104 @@
   </div>
 </section>
 
-
-<div class="section">
+<div class="section" id="deals">
   <div class="sec-header">
     <div class="sec-title">Up to –40% 🔥 Order.uk exclusive deals</div>
     <div class="tabs">
-      <button class="tab">Vegan</button>
-      <button class="tab">Sushi</button>
-      <button class="tab active">Pizza &amp; Fast food</button>
-      <button class="tab">Others</button>
+      <button class="tab" onclick="setTab(this)">Vegan</button>
+      <button class="tab" onclick="setTab(this)">Sushi</button>
+      <button class="tab active" onclick="setTab(this)">Pizza &amp; Fast food</button>
+      <button class="tab" onclick="setTab(this)">Others</button>
     </div>
   </div>
   <div class="deals-grid">
     <div class="deal-card">
       <img src="deal1.png" alt="Chef Burgers London"/>
-     
       <div class="deal-badge">-40%</div>
       <div class="deal-info">Chef Burgers London<small>Restaurant</small></div>
     </div>
     <div class="deal-card">
       <img src="deal2.png" alt="Grand AI Cafe London"/>
-     
       <div class="deal-badge">-35%</div>
       <div class="deal-info">Grand AI Cafe London<small>Restaurant</small></div>
     </div>
-    <div class="deal-card">
-      <img src="deal3.png" alt="Butterbrot Cafe London"/>
-      
+    <div class="deal-card deal-card--placeholder">
+      <div class="deal-placeholder-inner">
+        <span>🍽️</span>
+        <p>New Deal Coming Soon</p>
+      </div>
       <div class="deal-badge">-31%</div>
       <div class="deal-info">Butterbrot Cafe London<small>Restaurant</small></div>
     </div>
   </div>
 </div>
 
-
-<div class="section" style="margin-top:2px;">
+<div class="section" id="categories" style="margin-top:2px;">
   <div class="sec-header">
     <div class="sec-title">Order.uk Popular Categories 😋</div>
   </div>
   <div class="cat-grid">
     <div class="cat-card">
       <img src="burger.png" alt="Burgers"/>
-      
       <div class="cat-info"><p>Burgers &amp; Fast food</p><small>12 restaurants</small></div>
     </div>
     <div class="cat-card">
       <img src="salad.png" alt="Salads"/>
-      
       <div class="cat-info"><p>Salads</p><small>6 restaurants</small></div>
     </div>
     <div class="cat-card">
       <img src="noodles.png" alt="Pasta"/>
-      
       <div class="cat-info"><p>Pasta &amp; Casuals</p><small>8 restaurants</small></div>
     </div>
     <div class="cat-card">
       <img src="pizza.png" alt="Pizza"/>
-      
       <div class="cat-info"><p>Pizza</p><small>14 stores</small></div>
     </div>
     <div class="cat-card">
       <img src="wrap.png" alt="Breakfast"/>
-      
       <div class="cat-info"><p>Breakfast</p><small>4 restaurants</small></div>
     </div>
     <div class="cat-card">
       <img src="soup.png" alt="Soups"/>
-      
       <div class="cat-info"><p>Soups</p><small>10 restaurants</small></div>
     </div>
   </div>
 </div>
 
-<div class="section" style="margin-top:2px;">
+<div class="section" id="restaurants" style="margin-top:2px;">
   <div class="sec-header">
     <div class="sec-title">Popular Restaurants</div>
   </div>
   <div class="rest-grid">
     <div class="rest-card">
       <img src="mcd.png" alt="McDonald's"/>
-      
       <p>McDonald's London</p>
     </div>
     <div class="rest-card">
       <img src="papa.png" alt="Papa Johns"/>
-      
       <p>Papa Johns</p>
     </div>
     <div class="rest-card">
       <img src="kfc.png" alt="KFC"/>
-      
       <p>KFC West London</p>
     </div>
     <div class="rest-card">
       <img src="Rectangle 8 (4).png" alt="Texas Chicken"/>
-      
       <p>Texas Chicken</p>
     </div>
     <div class="rest-card">
       <img src="burgerking.png" alt="Burger King"/>
-      
       <p>Burger King</p>
     </div>
     <div class="rest-card">
       <img src="shawarma.png" alt="Shaurma 1"/>
-      
       <p>Shaurma 1</p>
     </div>
   </div>
 </div>
 
-
 <div class="app-promo">
   <img src="friends-laughing-using-mobiles 2.png" alt="Friends with phone"/>
- 
   <div class="app-text">
     <h2>Order<span>🧡</span>ing is more<br/><span>Personalised</span> &amp; Instant</h2>
     <p>Download the Order.uk app for faster ordering</p>
@@ -190,11 +172,9 @@
   </div>
 </div>
 
-
 <div class="partner-section">
   <div class="partner-card">
     <img src="chef.png" alt="Partner background"/>
-   
     <div class="pc">
       <small>Signup as business</small>
       <h3>Partner with us</h3>
@@ -203,7 +183,6 @@
   </div>
   <div class="partner-card">
     <img src="delivery.png" alt="Rider background"/>
-    
     <div class="pc">
       <small>Avail exclusive perks</small>
       <h3>Ride with us</h3>
@@ -212,14 +191,13 @@
   </div>
 </div>
 
-
-<div class="footer">
+<div class="footer" id="footer">
   <h3 style="margin-bottom:20px;font-size:20px;">Know more about us!</h3>
   <div class="footer-tabs">
-    <button class="ftab active">Frequent Questions</button>
-    <button class="ftab">Who we are?</button>
-    <button class="ftab">Partner Program</button>
-    <button class="ftab">Help &amp; Support</button>
+    <button class="ftab active" onclick="setFtab(this)">Frequent Questions</button>
+    <button class="ftab" onclick="setFtab(this)">Who we are?</button>
+    <button class="ftab" onclick="setFtab(this)">Partner Program</button>
+    <button class="ftab" onclick="setFtab(this)">Help &amp; Support</button>
   </div>
   <div class="footer-grid">
     <ul class="faq">
@@ -234,19 +212,16 @@
       <div class="steps">
         <div class="step">
           <img class="step-ico" src="order 1.png" alt="Place Order"/>
-          <!-- image file: order 1.png -->
           <h4>Place an Order!</h4>
           <p>Place your order through our website or Mobile App</p>
         </div>
         <div class="step">
           <img class="step-ico" src="delivery-icon.png" alt="Track Progress"/>
-          
           <h4>Track Progress</h4>
           <p>Track your order status with delivery any time</p>
         </div>
         <div class="step">
           <img class="step-ico" src="food-icon.png" alt="Get Order"/>
-         
           <h4>Get your Order!</h4>
           <p>Receive your order &amp; enjoy a lightning-fast delivery</p>
         </div>
@@ -255,6 +230,17 @@
   </div>
   <div class="footer-bottom">&copy; 2024 Order.uk — All rights reserved &nbsp;|&nbsp; Made with ❤️ for food lovers</div>
 </div>
+
+<script>
+  function setTab(el) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+  function setFtab(el) {
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
